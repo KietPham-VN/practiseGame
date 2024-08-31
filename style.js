@@ -25,7 +25,7 @@ const compare = (valuePlayer, valueComputer) => {
 	else return -1;
 };
 
-let playerItem = document.querySelectorAll(".user");
+let playerItem = document.querySelectorAll(".user");				
 playerItem.forEach((item) => {
 	// duyệt qua các item và yêu cầu bọn nó lắng nghe sự kiện click
 	item.addEventListener("click", (event) => {
@@ -98,7 +98,7 @@ btn.addEventListener("click", (event) => {
 // indexPlayer và indexComputer
 // Khi nào thắng ?
 //  0 - 2 = - 2
-//  1 - 0 = 1           indexPlayer - indexComputer= 1 || -2 thì thắng ==> return 1
+//  1 - 0 = 1           indexPlayer - indexComputer= 1 || -2 thì thắng => return 1
 //  2 - 1 = 1
 // khi nào hoài  indexPlayer - indexComputer = 0 || thì hòa return 0 ;
 // còn lại thì thua
