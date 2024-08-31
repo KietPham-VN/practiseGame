@@ -101,4 +101,4 @@ btn.addEventListener("click", (event) => {
 //  1 - 0 = 1           indexPlayer - indexComputer= 1 || -2 thì thắng ==> return 1
 //  2 - 1 = 1
 // khi nào hoài  indexPlayer - indexComputer = 0 || thì hòa return 0 ;
-// còn lại thì thua   
+// còn lại thì thua
