@@ -61,13 +61,13 @@ playerItem.forEach((item) => {
 		alertDiv.classList.add("alert");
 		let msg = "";
 		if (result == 1) {
-			msg = "Bạn Thắng";
+			msg = "Bạn Thắng 1 con bot";
 			alertDiv.classList.add("alert-succes");
 		} else if (result == 0) {
-			msg = "Bạn Hòa";
+			msg = "Bạn không thắng nổi 1 con bot";
 			alertDiv.classList.add("alert-warning");
 		} else {
-			msg = "Mày gà";
+			msg = "Mày gà quá thua cả 1 con bot";
 			alertDiv.classList.add("alert-dark");
 		}
 		alertDiv.textContent = msg;
@@ -82,7 +82,7 @@ let btn = document.querySelector(".btn-play-again");
 btn.addEventListener("click", (event) => {
 	// gọi lại hàm internal để cho máy chạy lại
 	clearInterval(internal);
-	internal = setInterval(handleChange, 50);
+	internal = setInterval(handleChange, 100);
 	// reset người chs
 	playerItem.forEach((item) => {
 		item.classList.remove("actived");
